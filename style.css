@@ -1,0 +1,418 @@
+/* ---------------
+       font 
+   ----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Alef&family=Lobster&family=Oswald&family=Poppins&family=Source+Sans+Pro:ital@0;1&display=swap");
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 740px;
+    background-color: white;
+}
+
+.header-bg {
+    background-color: black;
+    position: absolute;
+    width: 1200px;
+    height: 646px;
+    left: 70px;
+    top: 50px;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-info {
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 00px;
+    font-size: 1.6em;
+}
+
+.header-info h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+}
+
+.header-info p {
+    font-size: 1em;
+    color: white;
+}
+
+.button {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: white;
+}
+
+.button a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
+
+.button i {
+    color: red;
+}
+
+.header-pic img {
+    width: 581px;
+    height: 613px;
+    margin: 33px 33px 0px 32px;
+}
+
+/* box */
+main {
+    padding: 130px;
+}
+
+.box {
+    background-color: black;
+    height: 312px;
+    width: 312px;
+    border-radius: 10px;
+    padding: 30px 30px;
+    align-items: center;
+    margin: 30px 30px;
+
+}
+
+.box .button {
+    width: 100%;
+    height: 80px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+/* box end */
+
+/* ----------------
+        blogs 
+  ------------------*/
+.blogs {
+    width: 312px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.blog {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.thumbnail {
+    width: 312px;
+    height: 175px;
+    position: relative;
+}
+
+.block-detail {
+    padding: 20px;
+}
+
+button {
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#blog {
+    background-color: brown;
+}
+
+
+
+.blog-info {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----------------
+      blogs end
+ ------------------ */
+
+/*-----------------
+     footer strat 
+ --------------------*/
+footer {
+    height: 350px;
+    background-color: black;
+    justify-content: center;
+    padding: 0px 140px;
+}
+
+
+
+.footer-text {
+    padding-top: 15px;
+}
+
+h1 {
+    color: aliceblue;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links ul {
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+
+}
+
+.social-items {
+    list-style: none;
+}
+
+.social-items a {
+    padding: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.quick-links {
+    display: flex;
+    width: 560px;
+    height: 70px;
+    margin: auto;
+}
+
+.quick-links ul {
+    display: flex;
+}
+
+.quick-items {
+    list-style: none;
+
+}
+
+.quick-items a {
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 10px;
+    color: white;
+}
+
+/* tab  */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        height: 400px;
+    }
+
+    .header-bg {
+        width: 96%;
+        height: 400px;
+        left: 2%;
+        top: 2%;
+    }
+
+    .header-info {
+        width: 42%;
+
+        margin-top: 00px;
+        margin-left: 65px;
+
+
+    }
+
+    .header-info h1 {
+        font-size: 3.3em;
+    }
+
+    .header-info p {
+        font-size: 1em;
+    }
+
+    .header-pic img {
+        width: 400px;
+        height: 350px;
+        margin: 35px 10px 0px 10px;
+    }
+
+    /* main  */
+    main {
+        margin: 80px 0;
+    }
+
+    main .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .box {
+        background: #fff;
+        width: 90%;
+        height: 64px;
+        margin-bottom: 34px;
+        margin-right: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box .button {
+        margin-top: 0;
+    }
+
+    /* grid  */
+
+    .blogs {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+
+    .blog {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .thumbnail img {
+        width: 138%;
+    }
+
+    .blog-detail {
+        margin-top: 60px;
+    }
+
+    /* footer  */
+    footer {
+        padding: 10px 50px;
+    }
+
+    .quick-links ul {
+        display: flex;
+
+        justify-content: center;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px;
+    }
+}
+
+/* ----------
+    Media
+---------- */
+/* mobile  */
+@media (max-width: 500px) {
+    header {
+        height: 1104px;
+    }
+
+    .header-info {
+        width: 70%;
+    }
+
+    .header-bg {
+        position: absolute;
+        width: 95%;
+        height: 1124px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .header-bg .container {
+        text-align: center;
+    }
+
+    .header-bg .container {
+        flex-direction: column;
+    }
+
+    .header-pic img {
+        width: 90%;
+        height: 90%;
+        margin: 33px 33px 0px 32px;
+    }
+
+    main {
+        margin: 80px 0;
+    }
+
+    main .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 24px;
+        margin-right: 0px;
+    }
+
+    /* grid  */
+
+    .blogs {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog {
+        width: 100%;
+        justify-self: center;
+    }
+
+    .thumbnail img {
+        width: 165%;
+    }
+
+    .blog-detail {
+        margin-top: 115px;
+    }
+
+    /* footer  */
+    footer {
+        width: 99%;
+        height: auto;
+        padding: 10px 0 50px 0;
+
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .quick-links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px;
+    }
+}
